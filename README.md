@@ -71,7 +71,7 @@ The report is organized into four pages:
 3. **Sales & Transactions** — sales and purchases over time, category analysis, and transaction details.
 4. **Supplier Analysis** — products supplied, purchasing value, and supplier inventory contribution.
 
-> Dashboard screenshots and the Power BI report can be added to the `power-bi/` folder as they are finalized.
+> PowerBI Live Link:  `https://app.powerbi.com/groups/me/reports/74797f35-d936-4909-b801-3e51b5e22d07/56c7b6eb70e23ff292aa?experience=power-bi` 
 
 ## Getting Started
 
