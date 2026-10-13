@@ -1,121 +1,106 @@
 # Supply Chain & Inventory Management System
 
-A Python-based console application designed to manage products, suppliers, inventory, and stock transactions.
+An end-to-end inventory management and analytics project built using Python, MySQL, SQL, and Power BI.
 
-## Features
+## Overview
 
-### Product Management
+This project demonstrates how a supply chain inventory system can evolve from a simple CSV-based application into a relational database solution with interactive business intelligence dashboards.
 
-* Add products
-* View all products
-* Search products
-* Update product details
-* Delete products
+It focuses on product and supplier management, stock monitoring, transaction tracking, and inventory analysis.
 
-### Supplier Management
+## Project Versions
 
-* Add suppliers
-* View suppliers
-* Search suppliers
+### Version 1 — Python & CSV
+- Menu-driven console application
+- Product and supplier management
+- Inventory stock updates and tracking
+- Low-stock alerts and inventory valuation
+- Sales, purchases, and transaction history
+- CSV-based data storage
 
-### Inventory Management
+### Version 2 — Python & MySQL
+- Relational database integration
+- Product, supplier, inventory, and transaction tables
+- SQL queries and CRUD operations
+- Primary keys, foreign keys, and table relationships
+- Structured storage for inventory and transaction records
 
-* Add stock
-* Remove stock
-* Check current stock
-* Low-stock alerts
-* Calculate total inventory value
+### Version 3 — Power BI Analytics
+- Executive Overview dashboard
+- Inventory Analysis dashboard
+- Sales & Transactions dashboard
+- Supplier Analysis dashboard
+- DAX measures and data model relationships
+- Interactive reports for inventory and purchasing insights
 
-### Transaction Management
+## Technology Stack
 
-* Purchase stock
-* Sell products
-* Maintain transaction history
-* Automatic transaction ID generation
+- **Programming:** Python
+- **Database:** MySQL
+- **Query Language:** SQL
+- **Business Intelligence:** Microsoft Power BI
+- **Analytics:** DAX
+- **Data Storage (Version 1):** CSV
 
-## Technologies Used
+## Key Business Questions
 
-* Python
-* CSV File Handling
-* Object-Oriented Programming (OOP)
-* File Handling
-* Exception Handling
-* Modular Programming
+- Which products are running low on stock?
+- What is the estimated value of current inventory?
+- How do sales and purchase values change over time?
+- Which product categories contribute the most sales?
+- Which suppliers account for the highest purchasing value?
+- How is inventory value distributed across suppliers and categories?
 
-## Project Structure
+## Database Design
 
-```text
-supply-chain-inventory-management/
-│
-├── data/
-│   ├── productlist.csv
-│   ├── supplierlist.csv
-│   └── transactionlist.csv
-│
-├── src/
-│   ├── main.py
-│   ├── Products.py
-│   ├── Suppliers.py
-│   ├── Inventory.py
-│   └── Transactions.py
-│
-└── README.md
-```
+The MySQL database contains four core tables:
 
-## How to Run
+- `suppliers` — supplier details and contact information
+- `products` — product information, categories, prices, and reorder levels
+- `inventory` — current stock quantities
+- `transactions` — historical sales and purchase records
 
-Clone the repository:
+Foreign keys connect products with suppliers and inventory and transaction records with products.
 
-```bash
-git clone <your-github-repository-url>
-```
+## Power BI Dashboards
 
-Navigate to the project directory:
+The report is organized into four pages:
 
-```bash
-cd supply-chain-inventory-management
-```
+1. **Executive Overview** — key performance indicators and overall business trends.
+2. **Inventory Analysis** — current stock, inventory value, and low-stock products.
+3. **Sales & Transactions** — sales and purchases over time, category analysis, and transaction details.
+4. **Supplier Analysis** — products supplied, purchasing value, and supplier inventory contribution.
 
-Run the application:
+> Dashboard screenshots and the Power BI report can be added to the `power-bi/` folder as they are finalized.
 
-```bash
-python src/main.py
-```
+## Getting Started
 
-## Application Menu
+### Requirements
+- Python 3
+- MySQL Server and MySQL Workbench
+- Microsoft Power BI Desktop for dashboard exploration
 
-```text
-==================================================
-       SUPPLY CHAIN & INVENTORY SYSTEM
-==================================================
+### Setup
+1. Clone this repository.
+2. Follow the instructions for the version you want to run.
+3. For Version 2, create the MySQL database and execute the schema script.
+4. Configure the database connection using your own local credentials.
+5. Install any required Python packages.
+6. Run the Python entry point specified for that version.
+7. Open the Power BI report in Power BI Desktop after configuring its data connection.
 
-1. PRODUCT MANAGEMENT
-2. SUPPLIER MANAGEMENT
-3. INVENTORY MANAGEMENT
-4. TRANSACTION MANAGEMENT
-5. EXIT
-```
+Detailed setup commands will be documented alongside the corresponding version.
 
-## Learning Objectives
+## Learning Outcomes
 
-This project was developed to practice:
+- Python application development and modular programming
+- SQL CRUD operations and relational database design
+- Data integrity through primary and foreign key relationships
+- Inventory and transaction data management
+- Data modeling, DAX, and interactive Power BI reporting
+- Translating operational data into business insights
 
-* Python Object-Oriented Programming
-* Classes and objects
-* Functions and methods
-* CSV file handling
-* CRUD operations
-* Menu-driven applications
-* Inventory management concepts
-* Basic transaction processing
-* Modular project organization
+## Project Status
 
-## Future Improvements
-
-* Add a graphical user interface
-* Add database integration using MySQL or SQLite
-* Generate inventory reports
-* Add advanced search and filtering
-* Add sales and purchase reports
-
+Developed iteratively, with a CSV-based Python version, a MySQL-backed version, and a Power BI analytics layer.
 
